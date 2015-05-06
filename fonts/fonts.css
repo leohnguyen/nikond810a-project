@@ -3,3 +3,10 @@
     font-family: HiraKakuStd_w1 ;
     src: url('HiraKakuStdN W1.otf');
 }
+
+
+
+@font-face {
+    font-family: HiraKakuStd_w6 ;
+    src: url('HiraKakuStdN W6.otf');
+}
