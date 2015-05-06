@@ -161,6 +161,77 @@ a:hover{
 
 }
 
+/*================================= SUB MENU ================================*/
+.sub-menu{
+    background-color: #fff;
+    position: fixed;
+    top:108px;
+    width: 100%;
+}
+
+.sub-menu ul{
+
+}
+
+.sub-menu ul li{
+    width: 250px;
+    float:left;
+    text-align: center;
+}
+
+.sub-menu ul li a{
+    font-family: "HiraKakuStd_w1";
+    font-size: 16px;
+    color:#000;
+}
+
+.sub-menu ul li a div{
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background-color: #db395e;
+    display: none
+}
+
+.sub-menu ul li a:hover>div{
+    display: block;
+}
+
+
+@media (min-width: 320px ){
+
+}
+
+@media (min-width: 768px ){
+
+}
+
+@media (min-width: 1000px ){
+
+}
+
+@media (min-width: 1200px ){
+
+}
+
+/*================================= BANNER ================================*/
+
+
+.banner {
+    background-image: url('../images/toppage/toppage_bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 700px;
+    /*height: calc(100vh - 108px);*/
+    display: block;
+    margin-top:50px;
+}
+
+
+
 /*================================= SPLASH VIEW ================================*/
 
 
@@ -467,7 +538,7 @@ a:hover{
 
 
 
-/*================================= CONTENT TOP PAGE ================================*/
+/*================================= FOOTER ================================*/
 .footer_container{
     position: relative;
     background-color: #000;
