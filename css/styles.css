@@ -66,7 +66,8 @@ a:hover{
     border-radius: 0;
     border: 2px solid #fff;
     margin-top:20px ;
-    padding: 21px 22px;
+    margin-right: 0;
+    padding: 21px 22px;     
 }
 
 .navbar-toggle .icon-bar{
@@ -121,7 +122,7 @@ a:hover{
 
 
 .splashview{
-    background-image: url('../images/toppage_bg1.jpg');
+    background-image: url('../images/toppage/toppage_bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -131,11 +132,7 @@ a:hover{
     display: block;
 }
 
-.nikon_name{
-    position: absolute;
-    top:28px;
-    left: 30px
-}
+
 
 .splashview_content{
     margin-top:50px ;
@@ -163,10 +160,37 @@ a:hover{
 }
 
 
+.nikon_name{
+    position: absolute;
+    top:28px;
+    left: 30px;
+
+}
+
+@media (min-width: 320px ){
+    .nikon_name{
+        display: none ;
+    }
+}
+
+@media (min-width: 768px ){
+    .nikon_name{
+        display: block;
+    }
+}
+
+@media (min-width: 1000px ){
+
+}
+
+@media (min-width: 1200px ){
+
+}
+
 /*================================= CONTENT TOP PAGE ================================*/
 
 .toppage_content{
-    background-image: url('../images/toppage_bg1.jpg');
+    background-image: url('../images/toppage/toppage_bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
