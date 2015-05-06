@@ -11,7 +11,7 @@ body{
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;    */
     font-family: 'HiraKakuStd_w1' ;
     font-size:12px;
-    padding-top:108px;
+    
 }
 
 
@@ -28,10 +28,7 @@ a:hover{
     margin-right: 0
 }
 
-.container-fluid{
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 
 .container{
     padding-left: 0 ;
@@ -43,6 +40,24 @@ a:hover{
     margin-right: 0
 }
 
+@media (min-width: 320px ){
+    body{
+        padding-top:128px;
+    }
+    .container-fluid{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media (min-width: 768px ){
+    body{
+        padding-top:108px;
+    }
+    .container-fluid{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 
 /*================================= HEADER ================================*/
@@ -50,7 +65,7 @@ a:hover{
 
 .header_content{
     background-color: #050001;
-    height: 108px;
+    
     border-width: 0
 }
 
@@ -58,14 +73,14 @@ a:hover{
 .navbar > .container-fluid .navbar-brand{ 
     margin-left: 0;
     height: auto;
-    padding:20px 0;
+    /*padding:20px 0;*/
 }
 
 .navbar-toggle {
     border-color:#fff;
     border-radius: 0;
     border: 2px solid #fff;
-    margin-top:20px ;
+    margin-top:29px ;
     margin-right: 0;
     padding: 21px 22px;     
 }
@@ -111,12 +126,40 @@ a:hover{
     color:#000;
 }
 
-@media (min-width: @screen-xs-min) {  }
-@media (min-width: @screen-sm-min) {  }
-@media (min-width: @screen-md-min) {  }
-@media (min-width: @screen-lg-min) {  }
+@media (min-width: 320px ){
+    .header_content{
+        height: 128px
+    }
+    .navbar > .container-fluid .navbar-brand{
+        padding: 24px 0 ;
+    }
+    .navbar-brand > img{
+        width: 264px
+    }
 
+}
 
+@media (min-width: 768px ){
+    .header_content{
+        height: 108px
+    }
+    .navbar > .container-fluid .navbar-brand{
+        padding: 20px 0 ;
+    }
+    .navbar-brand > img{
+        width: 224px 
+    }
+    
+   
+}
+
+@media (min-width: 1000px ){
+
+}
+
+@media (min-width: 1200px ){
+
+}
 
 /*================================= SPLASH VIEW ================================*/
 
@@ -150,7 +193,6 @@ a:hover{
 }
 
 .splashview_content .title span{
-    font-size: 32px;
     font-family: "HiraKakuStd_w6";
 }
 
@@ -171,11 +213,23 @@ a:hover{
     .nikon_name{
         display: none ;
     }
+    .splashview_content .title span{
+        font-size: 36px;
+    }
+    .nikondslr{
+        width:100%
+    }
 }
 
 @media (min-width: 768px ){
     .nikon_name{
         display: block;
+    }
+    .splashview_content .title span{
+        font-size: 32px;
+    }
+    .nikondslr{
+        width: auto
     }
 }
 
@@ -199,42 +253,27 @@ a:hover{
     text-align: center;
 }
 
-.toppage_content .row{
-    background-color: rgba(0,0,0,0.7);
-}
+
 
 .toppage_content .toppage_headline{
     padding-top: 20px
 }
 
-.toppage_content p.scroll{
-    font-size: 14px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
 
-.toppage_content p.scroll:after{
-    content
-}
+
 
 .toppage_content .content_title{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
     text-transform: uppercase;
     font-size: 36px ;
-    margin-top: 100px;
-    margin-bottom: 40px;
-}
-
-.toppage_content .row:nth-child(2) .container{
-    margin-bottom: 192px ;
+    /*margin-top: 100px;*/
+    
+    font-weight: 500;
 }
 
 
 
-.toppage_content .content_items{
 
-}
 
 .toppage_content .content_items img{
     width: 100%;
@@ -254,7 +293,6 @@ a:hover{
     position: relative;
     text-align: center;
     width: 100%;
-    font-size: 18px;
     font-family: "HiraKakuStd_w6";
 } 
 
@@ -262,18 +300,91 @@ a:hover{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 } 
 
-@media (min-width: 650px ){
-    .toppage_content .content_items>div{
-        width: 165px;
-        height: 165px;
+@media (min-width: 320px ){
+    .toppage_content .row{
+        background-color: rgba(0,0,0,1);
     }
 
+    .toppage_content .content_items>div{
+        width: 592px;
+        height: 592px;
+    }
+
+    .toppage_content .content_items p{
+        font-size: 36px
+    }
+
+    .toppage_content p.scroll{
+        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        text-transform: uppercase;
+        margin-bottom: 0;
+        display: none;
+    }
+
+    .toppage_content .scroll-icon{
+        display: none 
+    }
+
+    .toppage_content .content_title{
+        margin-top: 60px ;
+        margin-bottom: 60px;
+    }
+
+    .toppage_content .content_items{
+        padding-left: 24px;
+        padding-right:  24px;
+        margin-bottom: 50px;
+    }
+
+    .toppage_content .content_items:last-child{
+        margin-bottom: 0
+    }
+
+    .toppage_content .row:nth-child(2) .container{
+        margin-bottom: 0 ;
+    }
 }
 
 @media (min-width: 768px ){
     .toppage_content .content_items>div{
-        width: 165px;
-        height: 165px;
+        width: 137px;
+        height: 137px;
+    }
+
+    .toppage_content .row{
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .toppage_content .content_items p{
+        font-size: 18px
+    }
+
+    .toppage_content p.scroll{
+        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        text-transform: uppercase;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .toppage_content .scroll-icon{
+        display: block;
+        margin: 0 auto;
+        margin-top: 5px
+    }
+    .toppage_content .content_title{
+        margin-top: 100px ;
+        margin-bottom: 40px;
+    }
+    .toppage_content .content_items{
+        padding-left: 24px;
+        padding-right:  24px;
+        margin-bottom: 0;
+    }
+
+    .toppage_content .row:nth-child(2) .container{
+        margin-bottom: 192px ;
     }
 
 }
@@ -336,7 +447,6 @@ a:hover{
 
 /*================================= CONTENT TOP PAGE ================================*/
 .footer_container{
-    height: 50px;
     position: relative;
     background-color: #000;
 }
@@ -354,14 +464,29 @@ a:hover{
 }
 
 .footer_container p{
-    font-size: 12px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     color:#999899;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-weight: 500
 }
 
 
-
+@media (min-width: 320px) {
+    .footer_container{
+        height: 114px
+    }
+    .footer_container p{
+        font-size: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .footer_container{
+        height: 50px
+    }
+    .footer_container p{
+        font-size: 12px;
+    }
+}
 
