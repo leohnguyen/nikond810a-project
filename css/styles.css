@@ -279,7 +279,7 @@ a:hover{
     width: 100%;
 }
 
-.toppage_content .content_items>div{
+.toppage_content .content_items .content-item-name{
     display: table;
     /*width: 238px;
     height: 238px;*/
@@ -305,7 +305,7 @@ a:hover{
         background-color: rgba(0,0,0,1);
     }
 
-    .toppage_content .content_items>div{
+    .toppage_content .content_items .content-item-name{
         width: 592px;
         height: 592px;
     }
@@ -347,7 +347,13 @@ a:hover{
 }
 
 @media (min-width: 768px ){
-    .toppage_content .content_items>div{
+
+    /*.toppage_content .content_items{
+        width:137px ;
+        padding:0;
+
+    }*/
+    .toppage_content .content_items .content-item-name{
         width: 137px;
         height: 137px;
     }
@@ -395,6 +401,11 @@ a:hover{
         width:238px ;
         padding:0;
 
+    }
+
+    .toppage_content .content_items .content-item-name{
+        width: 238px;
+        height: 238px;
     }
 
     .toppage_content .content_items:first-child{ 
